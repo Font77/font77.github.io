@@ -5,3 +5,39 @@ echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 gem install jekyll bundler
 =======================
+edited ~/maigit/font77.github.io/Gemfile belou line :
+gem "jekyll", "~> 4.2.0"
+=======================
+bundle exec jekyll new zs810
+=======================
+edit /home/viml/maigit/font77.github.io/zs810/Gemfile
+as
+(https://www.aleksandrhovhannisyan.com/blog/getting-started-with-jekyll-and-github-pages/)
+1) commented and made 2 lines as (tu publish to github):
+# gem "jekyll", "~> 4.2.0"
+# gem "minima", "~> 2.5"
+2) As per :
+# uncomment the line below. To upgrade, run `bundle update github-pages`.
+gem "github-pages", group: :jekyll_plugins
+3)
+
+====== zust message output phur ruby sass ====
+        Ruby Sass has reached end-of-life and should no longer be used.
+
+        * If you use Sass as a command-line tool, we recommend using Dart Sass, the new
+          primary implementation: https://sass-lang.com/install
+
+        * If you use Sass as a plug-in for a Ruby web framework, we recommend using the
+          sassc gem: https://github.com/sass/sassc-ruby#readme
+
+        * For more details, please refer to the Sass blog:
+          https://sass-lang.com/blog/posts/7828841
+
+        Post-install message from html-pipeline:
+        -------------------------------------------------
+        Thank you for installing html-pipeline!
+        You must bundle Filter gem dependencies.
+        See html-pipeline README.md for more details.
+        https://github.com/jch/html-pipeline#dependencies
+==================================================
+viml@viml ~/maigit/font77.github.io/zs810 $bundle exec jekyll serve --livereload
