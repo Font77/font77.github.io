@@ -41,3 +41,19 @@ gem "github-pages", group: :jekyll_plugins
         https://github.com/jch/html-pipeline#dependencies
 ==================================================
 viml@viml ~/maigit/font77.github.io/zs810 $bundle exec jekyll serve --livereload
+==================================================
+ctrl-C
+git add . ; git commit -am "vk.com/zs810" ;  git push
+==================================================
+_data: Where you can store data files for things like skills, projects, work history, and so on.
+_drafts: Add this to your .gitignore and store your blog post drafts in here (optional).
+    _includes: Where you define Jekyll includes, which are sort of like reusable HTML components.
+    _layouts: HTML layouts define the structure of your site and can be nested in one another.
+    _posts: Where you’ll store all of your blog posts as Markdown files.
+    _sass: This is where your SASS partials go. You’ll then need to import them in _assets/main.scss.
+    _site: Jekyll’s auto-generated build directory, which houses your final, compiled site. It’s not pushed to GitHub because it’s in .gitignore.
+    _assets: Mainly for storing images and scripts, but it can also house a main CSS file.
+
+You may be wondering why all of these directory names are prefixed by an underscore. A directory with a leading underscore is special and won’t get processed by Jekyll. As a result, it won’t appear in the build directory, _site/.
+==================================================
+* Liquid: site.title, site.description, site.url
